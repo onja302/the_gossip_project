@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenu sur gossip</h1>
+
+    <% var = 1 %>
+
+    <% gossips.each do |author,content| %>
+        <p>
+          <%= author %>
+          =>
+          <%= content %>
+          <a href="/gossips/<%= var %>/">new gossip</a>
+        </p>
+        <% var += 1 %>
+     <% end %>
+
+    <p><a href="/gossips/new/">new gossip</a></p>
+  </body>
+</html>

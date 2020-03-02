@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>PAGE POTIN</h1>
+    <p>Voici la page du potin n° <%= id %></p>
+
+        <p>
+          Son auteur : <%= gossips[0] %>
+          </br>
+          Le contenu du potin : <%= gossips[1] %>
+        </p>
+
+    <p><a href="/edit/<%= id %>/">edit potin</a></p>
+
+    <p><a href="/">Lien</a> pour revenir à la page des potins</p>
+
+
+    <form action='/edit/:x/' method='POST'>
+      <p>
+        commentaire : <%= coms %>
+      </p>
+
+
+
+      Votre commentaire : <input type='text' name='coms'/><br/>
+      <input type='submit'/>
+    </form>
+
+  </body>
+</html>
+
+
+
+
+
+ 
